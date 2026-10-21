@@ -20,6 +20,12 @@ h2{font-size:18px;margin:0 0 10px}
 ol,ul{margin:0;padding-left:22px}
 li{margin:6px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;padding:0;list-style:none}
+.faq details{border-top:1px solid var(--line);padding:12px 0}
+.faq details:first-of-type{border-top:0}
+.faq summary{cursor:pointer;font-weight:600}
+.faq p{margin:8px 0 0;color:var(--mute)}
+a.mail{color:var(--pink)}
+footer{text-align:center;color:var(--mute);font-size:14px;margin-top:48px;padding-top:20px;border-top:1px solid var(--line)}
 .grid li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:0}
 </style>
 </head>
@@ -29,7 +35,7 @@ li{margin:6px 0}
   <p class="sub">Remove backgrounds, upscale, erase objects, restore old photos and more. Runs on your PC. Your photos never leave it.</p>
 
   <a class="btn" id="dl" href="https://huggingface.co/Tactician254/pixelclip/resolve/main/PixelClip.zip" download>Download for Windows</a>
-  <p class="meta">Free &middot; about 2.6 GB &middot; Windows 10 or 11 &middot; works offline</p>
+  <p class="meta">Free &middot; about 2.6 GB &middot; Windows 10 or 11 &middot; works offline &middot; Version 1.0</p>
 
   <div class="card">
     <h2>How to start</h2>
@@ -50,6 +56,28 @@ li{margin:6px 0}
     <li>Remove backgrounds</li><li>Enhance and sharpen</li><li>Upscale 2x or 4x</li><li>Erase objects</li>
     <li>Restore old photos</li><li>Portrait retouch</li><li>Blur background</li><li>Hide faces</li><li>Vectorize logos</li>
   </ul>
+  <div class="card">
+    <h2>Requirements</h2>
+    <ul>
+      <li>Windows 10 or 11 (64-bit)</li>
+      <li>About 6 GB of free disk space once unzipped</li>
+      <li>8 GB of RAM recommended</li>
+    </ul>
+  </div>
+
+  <div class="card faq">
+    <h2>FAQ</h2>
+    <details><summary>Are my photos uploaded anywhere?</summary><p>No. Everything runs on your PC. Nothing is uploaded.</p></details>
+    <details><summary>Does it need the internet?</summary><p>Only to download it. After that it works offline.</p></details>
+    <details><summary>Why is the first launch slower?</summary><p>PixelClip prepares its AI tools the first time it opens. Later launches are faster.</p></details>
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p style="margin:0">Found a problem? Email <a class="mail" href="mailto:youtearn82@gmail.com">youtearn82@gmail.com</a>.</p>
+  </div>
+
+  <footer>&copy; 2026 PixelClip</footer>
 </main>
 <script>
 document.getElementById("dl").addEventListener("click",function(){var b=this,t=b.textContent;b.textContent="Starting download...";setTimeout(function(){b.textContent=t},3000)});
